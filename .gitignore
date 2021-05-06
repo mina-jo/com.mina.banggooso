@@ -1,3 +1,4 @@
 build/libs/com.smc.banggooso-1.0-SNAPSHOT.jar
-build/
-.gradle/
+build/*
+.gradle/*
+.idea/*
