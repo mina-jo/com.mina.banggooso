@@ -4,7 +4,6 @@
 
 </head>
 <body>
-MAIN PAGE!
-TESTTTT다시
+${list}
 </body>
 </html>
