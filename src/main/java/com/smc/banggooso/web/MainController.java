@@ -21,8 +21,11 @@ public class MainController {
     public ModelAndView main() throws Exception{
         ModelAndView mav = new ModelAndView("main");
 
-        //List<Board> boardList = boardDAO.findAll();
-        //mav.addObject("list",boardList);
+        List<Board> list= boardService.getBoardList();
+        mav.addObject("list",list);
+
+        List<Board> recommandList = boardService.getRecommandBoardList();
+        mav.addObject("recommandList",recommandList);
 
         return mav;
     }
@@ -34,6 +37,11 @@ public class MainController {
 
         List<Board> list= boardService.getBoardList();
         mav.addObject("list",list);
+
+        List<Board> recommandList = boardService.getRecommandBoardList();
+
+        mav.addObject("recommandList",recommandList);
+
         return mav;
     }
 }

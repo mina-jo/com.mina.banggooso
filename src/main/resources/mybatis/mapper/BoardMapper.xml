@@ -4,6 +4,14 @@
 
 <mapper namespace="com.smc.banggooso.mapper.BoardMapper">
     <select id="getBoardList" resultType="com.smc.banggooso.vo.Board">
-        SELECT * FROM C_TB_BOARD;
+        select * from C_TB_BOARD where acate = '1' AND atype= '1' AND astatus = '1' order by aregdate desc ;
+    </select>
+
+    <select id="getRecommandBoardList" resultType="com.smc.banggooso.vo.Board">
+        select * from C_TB_BOARD where acate = '1' AND atype= '1' AND astatus = '1'  AND arecommend = '1' order by arecommend_number ASC,aregdate desc LIMIT 4
+    </select>
+
+    <select id="getBoardDetail" parameterType="java.lang.Integer" resultType="com.smc.banggooso.vo.Board">
+        select * from C_TB_BOARD where idx=#{idx};
     </select>
 </mapper>

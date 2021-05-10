@@ -9,4 +9,8 @@ public interface BoardService {
 
     List<Board> getBoardList();
 
+    List<Board> getRecommandBoardList();
+
+    Board getBoardDetail(int idx);
+
 }

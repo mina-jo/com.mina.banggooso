@@ -10,4 +10,8 @@ import java.util.List;
 @Mapper
 public interface BoardMapper {
     List<Board> getBoardList();
+
+    List<Board> getRecommandBoardList();
+
+    Board getBoardDetail(int idx);
 }

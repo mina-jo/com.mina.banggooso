@@ -35,6 +35,7 @@ public class Application {
 
     @Bean
     public SqlSessionTemplate sqlSessionTemplate(SqlSessionFactory sqlSessionFactory) {
+
         return new SqlSessionTemplate(sqlSessionFactory);
     }
 

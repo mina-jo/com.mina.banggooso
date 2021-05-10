@@ -10,7 +10,7 @@ import javax.persistence.*;
 @ToString
 public class Board {
 
-    private Long idx;
+    private Integer idx;
 
     private Integer pidx;
 
@@ -37,5 +37,15 @@ public class Board {
     private Integer ashares;
 
     private String alink;
+
+    private String anew;
+
+    private String ahot;
+
+    private String afile_regName;
+
+    private String afile_regName1;
+
+    private String afile_regName_m;
 
 }
