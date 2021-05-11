@@ -25,7 +25,7 @@
     <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
 </head>
 <body>
-<%--<c:forEach items="${list }" var="item" varStatus="i">
+<%--<c:forEach items="${list }" var="item" varStatus="i">dd
     <c:out value="${item.atitle}"/>
 </c:forEach>--%>
 <div class="app index" data-app>
